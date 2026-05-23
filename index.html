@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -13,189 +14,274 @@
    <title>Almeer - Chicken & Burgers</title>
 </head>
 <body>
-   <header class="header" id="header">
-      <nav class="nav container">
-         <a href="#" class="nav__logo">Almeer</a>
-
-         <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-               <li class="nav__item">
-                  <a href="#home" class="nav__link active-link">Home</a>
-               </li>
-               <li class="nav__item">
-                  <a href="#menu" class="nav__link">Menu</a>
-               </li>
-               <li class="nav__item">
-                  <a href="#contact" class="nav__link">Contact</a>
-               </li>
-            </ul>
-
-            <div class="nav__close" id="nav-close">
-               <i class="ri-close-line"></i>
-            </div>
-         </div>
-
-         <div class="nav__toggle" id="nav-toggle">
+   <div class="menu">
+      <nav>
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
             <i class="ri-menu-line"></i>
-         </div>
+         </label>
+         <label class="logo">Almeer</label>
+         <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
       </nav>
-   </header>
+   </div>
 
-   <main class="main">
-      <section class="home section" id="home">
-         <div class="home__container container grid">
-            <img src="assets/img/home-img.png" alt="Almeer Chicken & Burgers" class="home__img">
+   <div class="section flex" id="hero">
+      <div class="text">
+         <h1 class="primary">
+            It's Not Just Food, <br>
+            It's an <span>Experience</span>
+         </h1>
+         <p class="tertiary">
+            Fresh, juicy chicken and burgers made with love. 
+            Every bite is crafted to bring you the ultimate flavor experience.
+         </p>
+         <a href="#menu" class="btn">Explore Menu</a>
+      </div>
+      <div class="visual">
+         <img src="assets/img/home-img.png" alt="Almeer Chicken">
+      </div>
+   </div>
 
-            <div class="home__data">
-               <h1 class="home__title">Almeer</h1>
-               <h2 class="home__subtitle">Taste the Best <br> Chicken & Burgers</h2>
-               <p class="home__description">
-                  Fresh, juicy, and made with love. Your favorite fried chicken and burgers are just a tap away.
-               </p>
-               <a href="#menu" class="button">View Menu</a>
-            </div>
+   <div class="section" id="how-it-works">
+      <h2 class="secondary">How It Works</h2>
+      <div class="container flex">
+         <div class="box">
+            <h3>Easy Order</h3>
+            <i class="ri-shopping-cart-line"></i>
+            <p>Browse our menu and select your favorite items with a single tap.</p>
          </div>
-      </section>
-
-      <section class="menu section" id="menu">
-         <span class="section__subtitle">Flavor You Crave</span>
-         <h2 class="section__title">Our Menu</h2>
-
-         <div class="menu__container container grid">
-            <article class="menu__card">
-               <img src="assets/img/chicken-dam-1.png" alt="Spicy Fried Chicken" class="menu__img">
-               <h3 class="menu__name">Spicy Fried Chicken</h3>
-               <p class="menu__description">Crispy, spicy, and golden fried to perfection</p>
-               <span class="menu__price">$8.99</span>
-               <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Spicy%20Fried%20Chicken%20(%248.99)" target="_blank" class="menu__button">
-                  <i class="ri-whatsapp-line"></i> Buy via WhatsApp
-               </a>
-            </article>
-
-            <article class="menu__card">
-               <img src="assets/img/chicken-dam-2.png" alt="Crispy Chicken Burger" class="menu__img">
-               <h3 class="menu__name">Crispy Chicken Burger</h3>
-               <p class="menu__description">Crunchy chicken fillet with fresh lettuce and mayo</p>
-               <span class="menu__price">$6.99</span>
-               <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Crispy%20Chicken%20Burger%20(%246.99)" target="_blank" class="menu__button">
-                  <i class="ri-whatsapp-line"></i> Buy via WhatsApp
-               </a>
-            </article>
-
-            <article class="menu__card">
-               <img src="assets/img/chicken-dam-3.png" alt="BBQ Chicken Wings" class="menu__img">
-               <h3 class="menu__name">BBQ Chicken Wings</h3>
-               <p class="menu__description">Smoky BBQ glazed wings, tender and juicy inside</p>
-               <span class="menu__price">$10.99</span>
-               <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20BBQ%20Chicken%20Wings%20(%2410.99)" target="_blank" class="menu__button">
-                  <i class="ri-whatsapp-line"></i> Buy via WhatsApp
-               </a>
-            </article>
-
-            <article class="menu__card">
-               <img src="assets/img/chicken-dam-4.png" alt="Zinger Burger" class="menu__img">
-               <h3 class="menu__name">Zinger Burger</h3>
-               <p class="menu__description">Extra crispy zinger with a spicy kick you'll love</p>
-               <span class="menu__price">$7.49</span>
-               <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Zinger%20Burger%20(%247.49)" target="_blank" class="menu__button">
-                  <i class="ri-whatsapp-line"></i> Buy via WhatsApp
-               </a>
-            </article>
-
-            <article class="menu__card">
-               <img src="assets/img/chicken-dam-5.png" alt="Chicken Nuggets" class="menu__img">
-               <h3 class="menu__name">Chicken Nuggets</h3>
-               <p class="menu__description">Golden bite-sized nuggets, perfect for sharing</p>
-               <span class="menu__price">$5.99</span>
-               <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Chicken%20Nuggets%20(%245.99)" target="_blank" class="menu__button">
-                  <i class="ri-whatsapp-line"></i> Buy via WhatsApp
-               </a>
-            </article>
-
-            <article class="menu__card">
-               <img src="assets/img/chicken-dam-6.png" alt="Double Cheese Burger" class="menu__img">
-               <h3 class="menu__name">Double Cheese Burger</h3>
-               <p class="menu__description">Two beef patties with melted cheese and special sauce</p>
-               <span class="menu__price">$9.99</span>
-               <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Double%20Cheese%20Burger%20(%249.99)" target="_blank" class="menu__button">
-                  <i class="ri-whatsapp-line"></i> Buy via WhatsApp
-               </a>
-            </article>
+         <div class="box active">
+            <h3>Best Quality</h3>
+            <i class="ri-award-line"></i>
+            <p>Fresh ingredients, perfectly seasoned, cooked to golden perfection.</p>
          </div>
-      </section>
-
-      <section class="contact section" id="contact">
-         <span class="section__subtitle">Get In Touch</span>
-         <h2 class="section__title">Contact Us to Order</h2>
-
-         <div class="contact__container container grid">
-            <div class="contact__data">
-               <h3 class="contact__title">Place Your Order</h3>
-               <p class="contact__description">
-                  Order directly via WhatsApp and we'll prepare your meal fresh for you. 
-                  Customize your order, ask about combos, or just say hi!
-               </p>
-
-               <a href="https://wa.me/1234567890" target="_blank" class="contact__button button">
-                  <i class="ri-whatsapp-line"></i> Order on WhatsApp
-               </a>
-            </div>
-
-            <div class="contact__image">
-               <img src="assets/img/contact-img-1.png" alt="Contact Almeer" class="contact__img">
-            </div>
+         <div class="box">
+            <h3>Fast Delivery</h3>
+            <i class="ri-motorbike-line"></i>
+            <p>Hot and fresh, delivered straight to your doorstep in no time.</p>
          </div>
-      </section>
-   </main>
+      </div>
+   </div>
 
-   <footer class="footer">
-      <div class="footer__container container grid">
-         <div>
-            <a href="#" class="footer__logo">Almeer</a>
-            <p class="footer__description">Taste the Best Chicken & Burgers</p>
+   <div class="section" id="about">
+      <div class="container flex">
+         <div class="visual">
+            <img src="assets/img/about-img-1.png" alt="About Almeer">
          </div>
+         <div class="text">
+            <div class="secondary">About Almeer</div>
+            <h2 class="primary">50+</h2>
+            <h3 class="tertiary">Delicious Recipes</h3>
+            <p>
+               At Almeer, we believe great food brings people together. 
+               Our chefs use only the finest ingredients to create chicken and burgers 
+               that are crispy, juicy, and packed with flavor. Every meal is made fresh 
+               to order, because you deserve nothing less.
+            </p>
+            <a href="#menu" class="btn">View Our Menu</a>
+         </div>
+      </div>
+   </div>
 
-         <div class="footer__content">
-            <div>
-               <h3 class="footer__title">Quick Links</h3>
-               <ul class="footer__links">
-                  <li><a href="#home" class="footer__link">Home</a></li>
-                  <li><a href="#menu" class="footer__link">Menu</a></li>
-                  <li><a href="#contact" class="footer__link">Contact</a></li>
-               </ul>
+   <div class="section" id="menu">
+      <div class="container">
+         <h2 class="secondary">Our Menu</h2>
+         <ul class="category">
+            <li class="active" data-filter="all">All</li>
+            <li data-filter="chicken">Chicken</li>
+            <li data-filter="burger">Burger</li>
+         </ul>
+         <div class="restaurant-menu">
+            <div class="menu-item" data-category="chicken">
+               <img src="assets/img/chicken-dam-1.png" alt="Spicy Fried Chicken">
+               <div class="menu-item__body">
+                  <div class="title">Spicy Fried Chicken</div>
+                  <div class="desc">Crispy, spicy, and golden fried to perfection</div>
+                  <div class="order flex">
+                     <div class="price">$8.99</div>
+                     <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Spicy%20Fried%20Chicken%20(%248.99)" target="_blank" class="btn btn-menu"><i class="ri-whatsapp-line"></i> Order Now</a>
+                  </div>
+               </div>
             </div>
-
-            <div>
-               <h3 class="footer__title">Contact Info</h3>
-               <ul class="footer__list">
-                  <li class="footer__info">+1 234 567 890</li>
-                  <li class="footer__info">hello@almeer.com</li>
-               </ul>
+            <div class="menu-item" data-category="burger">
+               <img src="assets/img/chicken-dam-2.png" alt="Crispy Chicken Burger">
+               <div class="menu-item__body">
+                  <div class="title">Crispy Chicken Burger</div>
+                  <div class="desc">Crunchy chicken fillet with fresh lettuce and mayo</div>
+                  <div class="order flex">
+                     <div class="price">$6.99</div>
+                     <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Crispy%20Chicken%20Burger%20(%246.99)" target="_blank" class="btn btn-menu"><i class="ri-whatsapp-line"></i> Order Now</a>
+                  </div>
+               </div>
             </div>
-
-            <div>
-               <h3 class="footer__title">Order Now</h3>
-               <ul class="footer__social">
-                  <li>
-                     <a href="https://wa.me/1234567890" target="_blank" class="footer__social-link">
-                        <i class="ri-whatsapp-line"></i>
-                     </a>
-                  </li>
-               </ul>
+            <div class="menu-item" data-category="chicken">
+               <img src="assets/img/chicken-dam-3.png" alt="BBQ Chicken Wings">
+               <div class="menu-item__body">
+                  <div class="title">BBQ Chicken Wings</div>
+                  <div class="desc">Smoky BBQ glazed wings, tender and juicy inside</div>
+                  <div class="order flex">
+                     <div class="price">$10.99</div>
+                     <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20BBQ%20Chicken%20Wings%20(%2410.99)" target="_blank" class="btn btn-menu"><i class="ri-whatsapp-line"></i> Order Now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="menu-item" data-category="burger">
+               <img src="assets/img/chicken-dam-4.png" alt="Zinger Burger">
+               <div class="menu-item__body">
+                  <div class="title">Zinger Burger</div>
+                  <div class="desc">Extra crispy zinger with a spicy kick you'll love</div>
+                  <div class="order flex">
+                     <div class="price">$7.49</div>
+                     <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Zinger%20Burger%20(%247.49)" target="_blank" class="btn btn-menu"><i class="ri-whatsapp-line"></i> Order Now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="menu-item" data-category="chicken">
+               <img src="assets/img/chicken-dam-5.png" alt="Chicken Nuggets">
+               <div class="menu-item__body">
+                  <div class="title">Chicken Nuggets</div>
+                  <div class="desc">Golden bite-sized nuggets, perfect for sharing</div>
+                  <div class="order flex">
+                     <div class="price">$5.99</div>
+                     <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Chicken%20Nuggets%20(%245.99)" target="_blank" class="btn btn-menu"><i class="ri-whatsapp-line"></i> Order Now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="menu-item" data-category="burger">
+               <img src="assets/img/chicken-dam-6.png" alt="Double Cheese Burger">
+               <div class="menu-item__body">
+                  <div class="title">Double Cheese Burger</div>
+                  <div class="desc">Two beef patties with melted cheese and special sauce</div>
+                  <div class="order flex">
+                     <div class="price">$9.99</div>
+                     <a href="https://wa.me/1234567890?text=Hi%20Almeer!%20I%20want%20to%20order%20Double%20Cheese%20Burger%20(%249.99)" target="_blank" class="btn btn-menu"><i class="ri-whatsapp-line"></i> Order Now</a>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
+   </div>
 
-      <span class="footer__copy">
-         &#169; 2026 Almeer. All rights reserved.
-      </span>
-   </footer>
+   <div class="section" id="reviews">
+      <div class="container flex">
+         <div class="text">
+            <h2 class="secondary">What People Say About Almeer</h2>
+            <p>
+               Our customers love the taste and quality of our food. 
+               Every order brings a smile, and that's what keeps us going. 
+               Here's what they have to say about their Almeer experience.
+            </p>
+            <div class="user flex">
+               <img src="assets/img/about-img-2.png" alt="Customer">
+               <div class="name">
+                  <div class="title">Ahmed Khan</div>
+                  <div class="location">Lahore, Pakistan</div>
+               </div>
+            </div>
+         </div>
+         <div class="visual">
+            <img src="assets/img/combo-img.png" alt="Customer review">
+         </div>
+      </div>
+   </div>
 
-   <a href="#" class="scrollup" id="scroll-up">
-      <i class="ri-arrow-up-line"></i>
+   <div class="section" id="faq">
+      <h2 class="secondary">Frequently Asked Questions</h2>
+      <div class="faq">
+         <details>
+            <summary>How do I place an order?</summary>
+            <div class="content">
+               <p>Simply browse our menu, select your items, and click "Order Now" to place your order via WhatsApp. We'll confirm and prepare your meal fresh.</p>
+            </div>
+         </details>
+         <details>
+            <summary>What are your delivery hours?</summary>
+            <div class="content">
+               <p>We are open from 11:00 AM to 11:00 PM, seven days a week. Orders placed after 10:30 PM will be delivered the next day.</p>
+            </div>
+         </details>
+         <details>
+            <summary>Do you offer custom orders?</summary>
+            <div class="content">
+               <p>Yes! Contact us via WhatsApp with your custom order requirements, and we'll do our best to accommodate your preferences.</p>
+            </div>
+         </details>
+         <details>
+            <summary>What payment methods do you accept?</summary>
+            <div class="content">
+               <p>We accept cash on delivery, credit/debit cards, and digital payments via JazzCash and EasyPaisa.</p>
+            </div>
+         </details>
+      </div>
+   </div>
+
+   <div class="section" id="contact">
+      <div class="container flex">
+         <div class="visual">
+            <img src="assets/img/contact-img-2.png" alt="Contact Almeer">
+         </div>
+         <div class="text">
+            <h2 class="secondary">Get In Touch</h2>
+            <p>
+               Have a question or want to place a large order? Reach out to us directly on WhatsApp. 
+               We're always happy to hear from you and ready to serve.
+            </p>
+            <a href="https://wa.me/1234567890" target="_blank" class="btn contact-btn"><i class="ri-whatsapp-line"></i> Order on WhatsApp</a>
+         </div>
+      </div>
+   </div>
+
+   <div class="footer">
+      <div class="container flex">
+         <div class="footer-about">
+            <h2>Almeer</h2>
+            <p>Fresh, juicy chicken and burgers made with love. Your satisfaction is our priority, and every meal is crafted to perfection.</p>
+         </div>
+         <div class="footer-category">
+            <h2>Our Menu</h2>
+            <ul>
+               <li>Spicy Fried Chicken</li>
+               <li>Crispy Chicken Burger</li>
+               <li>BBQ Chicken Wings</li>
+               <li>Zinger Burger</li>
+               <li>Double Cheese Burger</li>
+            </ul>
+         </div>
+         <div class="quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+               <li><a href="#hero">Home</a></li>
+               <li><a href="#about">About Us</a></li>
+               <li><a href="#menu">Menu</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+         <div class="get-in-touch">
+            <h2>Get in Touch</h2>
+            <ul>
+               <li><i class="ri-whatsapp-line"></i> +1 234 567 890</li>
+               <li><i class="ri-mail-line"></i> hello@almeer.com</li>
+            </ul>
+            <div class="footer__social">
+               <a href="https://wa.me/1234567890" target="_blank" class="footer__social-link"><i class="ri-whatsapp-line"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>&copy; 2026 Almeer. All rights reserved.</p>
+      </div>
+   </div>
+
+   <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+      <i class="ri-whatsapp-line"></i>
    </a>
 
-   <script src="assets/js/scrollreveal.min.js"></script>
    <script src="assets/js/main.js"></script>
 </body>
 </html>
