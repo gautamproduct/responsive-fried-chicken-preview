@@ -77,3 +77,20 @@ if (homeImg) {
   }
   floatAnimation()
 }
+const categoryBtns = document.querySelectorAll('.category__btn')
+const menuCards = document.querySelectorAll('.menu__card')
+categoryBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    categoryBtns.forEach(b => b.classList.remove('active'))
+    btn.classList.add('active')
+    const filter = btn.dataset.filter
+    menuCards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.classList.remove('hide')
+      } else {
+        card.classList.add('hide')
+      }
+    })
+  })
+})
+document.querySelectorAll('.menu__card').forEach(c => c.classList.remove('hide'))
