@@ -194,7 +194,7 @@ img {
   padding-top: 1rem;
 }
 .home__img {
-  width: 280px;
+  width: 350px;
   justify-self: center;
   filter: var(--shadow-img);
 }
@@ -423,7 +423,7 @@ img {
     margin-inline: 1rem;
   }
   .home__img {
-    width: 220px;
+    width: 260px;
   }
   .menu__img {
     width: 120px;
@@ -455,7 +455,7 @@ img {
     text-align: initial;
   }
   .home__img {
-    width: 350px;
+    width: 400px;
     order: -1;
   }
   .contact__container {
@@ -490,7 +490,7 @@ img {
     column-gap: 4rem;
   }
   .home__img {
-    width: 500px;
+    width: 550px;
   }
   .menu__container {
     grid-template-columns: repeat(3, 1fr);
