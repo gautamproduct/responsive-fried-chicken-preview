@@ -195,6 +195,7 @@ img {
 }
 .home__img {
   width: 350px;
+  max-width: none;
   justify-self: center;
   filter: var(--shadow-img);
 }
@@ -455,7 +456,8 @@ img {
     text-align: initial;
   }
   .home__img {
-    width: 400px;
+    width: 450px;
+    max-width: none;
     order: -1;
   }
   .contact__container {
@@ -490,7 +492,8 @@ img {
     column-gap: 4rem;
   }
   .home__img {
-    width: 550px;
+    width: 600px;
+    max-width: none;
   }
   .menu__container {
     grid-template-columns: repeat(3, 1fr);
