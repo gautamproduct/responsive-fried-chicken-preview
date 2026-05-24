@@ -55,7 +55,6 @@ button {
 body {
   background-color: var(--body-color);
   color: var(--black-color);
-  overflow-x: hidden;
 }
 input,
 button {
