@@ -195,7 +195,7 @@ img {
 }
 .home__img {
   width: 400px;
-  max-width: none;
+  max-width: 100%;
   justify-self: center;
   filter: var(--shadow-img);
 }
